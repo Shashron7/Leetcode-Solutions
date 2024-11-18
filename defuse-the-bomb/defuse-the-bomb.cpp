@@ -3,9 +3,6 @@ public:
     vector<int> decrypt(vector<int>& code, int k) {
         vector<int> copy=code;
         for(auto it: code) copy.push_back(it);
-
-        cout<<"code size is "<<code.size()<<endl;
-        cout<<"copy size is "<<copy.size()<<endl;
         vector<int> pre(copy.size());
         pre[0]=copy[0];
         for(int i=1; i<copy.size(); i++)
@@ -33,8 +30,6 @@ public:
             {
                 int curr=pre[i-1]-pre[i+k-1];
                 ans.push_back(curr);
-                // cout<<pre[i]<<" "<<endl;
-                // cout<<i-1<<" "<<i-k-1<<" "<<endl;
             }
         }
         return ans;
