@@ -38,7 +38,6 @@ public:
             }
         }
 
-        for(auto it: v) cout<<it[0]<<" "<<it[1]<<endl;
         vector<bool> ans;
         for(auto it: queries)
         {
