@@ -10,7 +10,8 @@ public:
             ms.insert(nums[r]);
             while(*ms.rbegin()-*ms.begin() > 2)
             {
-                ms.erase(nums[l]);
+                auto it=ms.find(nums[l]);
+                ms.erase(it);
                 l++;
             }
             ans +=(r-l+1);
