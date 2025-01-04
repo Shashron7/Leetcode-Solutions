@@ -6,7 +6,6 @@ public:
         for(int i=0; i<26; i++)
         {
             int curr=i+'a';
-            set<int> vis;
             int f=-1;
             int l=-1;
 
