@@ -4,7 +4,7 @@ public:
         int n=locked.size();
         if(n%2!=0) return false;
         if(n==1) return false;
-        if((s[n-1]=='(' && locked[n-1]=='1') || (s[0]==')' && locked[0]=='1')) return false;
+        // if((s[n-1]=='(' && locked[n-1]=='1') || (s[0]==')' && locked[0]=='1')) return false;
 
         int unl=0; //unlocked
         int ll=0; //locked left
@@ -45,7 +45,7 @@ public:
             {
                 if(s[i]=='(')
                 {
-                    if(lr > 0)
+                    if(lr > 0) 
                     {
                         lr--;
                         continue;
