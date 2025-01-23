@@ -22,10 +22,6 @@ public:
             cols[j]=val;
         }
 
-        for(auto it: cols) cout<<it<<" ";
-        cout<<endl;
-        for(auto it: rows) cout<<it<<" ";
-
         int ans=0;
 
         for(int i=0; i<n; i++)
