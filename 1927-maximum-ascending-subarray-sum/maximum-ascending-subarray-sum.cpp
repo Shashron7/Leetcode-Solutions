@@ -11,7 +11,6 @@ public:
             pre[i]=pre[i-1]+nums[i];
         }
 
-        for(auto it : pre) cout<<it<<" ";
 
         int l=0;
         int ans=nums[0];
